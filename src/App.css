@@ -1,0 +1,406 @@
+.main-layout {
+  height: 100vh;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.success {
+  color: green !important;
+}
+
+.error {
+  color: red !important;
+}
+
+.bold {
+  font-weight: bold !important;
+}
+
+.main-layout .main-sider {
+  color: white !important;
+  background-color: #040440 !important;
+  padding: 16px;
+  height: 100%;
+  position: relative;
+}
+
+.main-layout .main-sider .heading {
+  font-size: 28px !important;
+  padding: 0 12px;
+}
+
+.main-sider .ant-menu-item-selected {
+  background-color: rgba(255,255,255, 0.4) !important;
+  color: white !important;
+}
+
+.main-sider .ant-layout-sider-children {
+  margin: 10px 0 15px;
+}
+
+.main-sider .profile-info {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  padding: 16px;
+  background-color: #2D2D69;
+  border-radius: 10px;
+  position: absolute;
+  width: 80%;
+  bottom: 16px;
+}
+
+.main-sider .profile-info div {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-sider .profile-info div span:nth-child(2) {
+  font-size: 10px;
+}
+
+.main-sider .profile-info span:last-child {
+  
+}
+
+.main-sider .profile-info img{
+  width: 32px; 
+  border-radius: 50%;
+}
+
+.menu {
+  margin-top: 1rem;
+  color: white !important;
+  background-color: #040440 !important;
+}
+
+.menu .ant-menu-item {
+  margin: 1rem 0;
+}
+
+.main-content {
+  color: black !important;
+  background-color: #F5F6F8 !important;
+  position: relative;
+  overflow-y: auto;
+}
+
+.main-content .content-heading {
+  color: black !important;
+  background-color: #F5F6F8 !important;
+  padding-top: 32px;
+  font-size: 25px;
+  display: flex;
+  justify-content: space-between;
+  line-height: initial;
+  height: auto;
+}
+
+.search-bar {
+  width: 20% !important;
+}
+
+.content {
+  margin: 48px 50px;
+}
+
+.basic-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.basic-info .card {
+  width: 22%;
+}
+
+.basic-info .ant-card-body {
+  display: flex;
+  align-items: center;
+}
+
+.basic-info .info div{
+  font-size: 10px;
+}
+
+.basic-info .info div:first-child{
+  font-weight: thin;
+  opacity: 0.8;
+}
+
+.basic-info .info div:nth-child(2){
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.basic-info .earning {
+  border-radius: 50%;
+  padding: 20px 23px;
+  margin-right: 16px;
+  background: linear-gradient(186deg, rgba(2,0,36,1) 0%, rgba(151,255,127,1) 0%, rgba(221,255,206,1) 100%);
+}
+
+.basic-info .orders {
+  border-radius: 50%;
+  padding: 20px 23px;
+  margin-right: 16px;
+  background: linear-gradient(186deg, rgba(2,0,36,1) 0%, rgba(209,159,255,1) 0%, rgba(241,219,255,1) 100%);
+}
+
+.basic-info .balance {
+  border-radius: 50%;
+  padding: 20px 23px;
+  margin-right: 16px;
+  background: linear-gradient(186deg, rgba(2,0,36,1) 0%, rgba(103,244,255,1) 0%, rgba(234,255,254,1) 100%);
+}
+
+.basic-info .total-sales {
+  border-radius: 50%;
+  padding: 20px 23px;
+  margin-right: 16px;
+  background: linear-gradient(186deg, rgba(2,0,36,1) 0%, rgba(253,55,255,1) 0%, rgba(255,186,251,1) 100%);
+}
+
+.middle-section {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 32px;
+  gap: 48px;
+}
+
+.middle-section .overview {
+  flex: 8;
+  background-color: white;
+  border-radius: 10px;
+  padding: 16px 20px;
+}
+
+.middle-section .overview .head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.middle-section .overview .head div:first-child {
+  display: flex;
+  flex-direction: column;
+}
+
+.middle-section .overview .head div:first-child span:first-child {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.overview .dropdown .ant-select-selection-item {
+  overflow:unset !important;
+  align-self: start !important;
+}
+
+.overview .bar-graph {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  flex-direction: row;
+  height: 35vh;
+  align-items: flex-end;
+}
+
+.overview .bar-graph .month {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 12px;
+  text-align: center;
+  height: 100%;
+  background-color: white;
+}
+
+.overview .bar-graph .month .bar {
+  width: 42px;
+  border-radius: 12px;
+  background-color: #F2EFFF;
+}
+
+.overview .bar-graph .value-1 .bar {
+  height: 10% !important;
+}
+.overview .bar-graph .value-2 .bar {
+  height: 20% !important;
+}
+.overview .bar-graph .value-3 .bar {
+  height: 30% !important;
+}
+.overview .bar-graph .value-4 .bar {
+  height: 40% !important;
+}
+.overview .bar-graph .value-5 .bar {
+  height: 50% !important;
+}
+.overview .bar-graph .value-6 .bar {
+  height: 60% !important;
+}
+.overview .bar-graph .value-7 .bar {
+  height: 70% !important;
+}
+.overview .bar-graph .value-8 .bar {
+  height: 80% !important;
+}
+.overview .bar-graph .value-9 .bar {
+  height: 85% !important;
+}
+.overview .bar-graph .value-10 .bar {
+  height: 100% !important;
+  background-color: #5A32EA !important;
+}
+
+.middle-section .pie-chart {
+  flex: 2;
+  background-color: white;
+  border-radius: 10px;
+  padding: 16px 16px;
+  display: flex;
+  flex-direction: column;
+  gap:48px;
+}
+
+.middle-section .pie-chart .head {
+  display: flex;
+  flex-direction: column;
+}
+
+.middle-section .pie-chart .head span:first-child {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.table-info {
+  margin-top: 32px;
+  background-color: white;
+  padding: 16px;
+}
+
+.table-info .head {
+  margin-bottom: 16px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.table-info .head div.title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.table-info .head div:nth-child(2) {
+  display: flex;
+  justify-content: space-between;
+}
+
+.table-info .head div:nth-child(2) .search-bar {
+  width: 40% !important;
+}
+
+.table-info .product-name{
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.table-info .product-name img{
+  height: 45px;
+}
+
+
+.table-info .product-name div {
+  display: flex;
+  flex-direction: column;
+}
+
+.table-info .product-name div span:first-child{
+  font-weight: 600;
+  font-size: 17px;
+}
+
+@media only screen and (max-width: 500px) {
+  .main-layout .main-sider .heading {
+    font-size: 12px !important;
+    padding: 0 10px;
+  }
+
+  .main-layout .main-sider .profile-info {
+    padding: 10px;
+    width: fit-content;
+  }
+
+  .main-layout .main-sider .profile-info div,
+  .main-layout .main-sider .profile-info span {
+    display: none;
+  }
+
+  .main-content .content-heading span:first-child{
+    font-size: 24px;
+  }
+
+  .main-content .content-heading .search-bar{
+    display: none;
+  }
+
+  .ant-layout-header {
+    padding: 0 14px;
+  }
+  .content {
+    margin: 30px 14px;
+  }
+
+  .content .basic-info {
+    flex-wrap: wrap;
+  }
+
+  .content .basic-info .card {
+    width: 80%;
+    margin-top: 10px;
+    flex: 2;
+  }
+
+  .content .basic-info .earning,
+  .content .basic-info .orders,
+  .content .basic-info .balance,
+  .content .basic-info .total-sales {
+    padding: 10px 13px;
+  }
+
+  .middle-section {
+    flex-direction: column;
+  }
+
+  .middle-section .overview .head div:first-child span:first-child {
+    font-size: 15px;
+    font-weight: 700;
+  }
+  .middle-section .overview .head div:first-child span:last-child {
+    font-size: 10px;
+  }
+
+  .middle-section .overview .bar-graph {
+    margin-top: 10px;
+  }
+
+  .middle-section .overview .bar-graph .month {
+    font-size: 10px;
+  }
+
+  .middle-section .overview .bar-graph .month .bar {
+    width: 10px;
+  }
+  
+  .table-info .head {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .table-info .head div.title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+}
+
